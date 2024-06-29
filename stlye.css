@@ -64,4 +64,82 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: .7em;
+}
+
+nav .logo{
+  display: flex;
+  position: sticky;
+}
+
+nav .logo img{
+  width: auto;
+  height: 50px;
+  border-radius: 100px;
+}
+
+.navigasi ul{
+  display: flex;
+  padding: 5px;
+  list-style: none;
+}
+
+.navigasi li a{
+  display: flex;
+  text-decoration: none;
+  /* background-color: rgb(0, 0, 0); */
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.navigasi li a:hover{
+  background-color: wheat;
+  color: white;
+  font-weight: bold;
+}
+
+
+.navigasi li {
+  margin-right: 10px; /* Menambahkan jarak antar elemen */
+}
+
+.navigasi li:last-child {
+  margin-right: 0; /* Menghapus margin pada elemen terakhir */
+}
+
+
+.login-register ul{
+  display: flex;
+  padding: 5px;
+  list-style: none;
+}
+
+.login-register li a{
+  display: flex;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.login-register a:hover{
+  background-color: wheat;
+  color: white;
+  font-weight: bold;
+}
+
+.login-register li {
+  margin-right: 10px; /* Menambahkan jarak antar elemen */
+}
+
+.login-register li:last-child {
+  margin-right: 0; /* Menghapus margin pada elemen terakhir */
 }
