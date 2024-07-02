@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
     <title>Femina</title>
+    
 </head>
 <body>
 <!-- Start Navigasi -->
@@ -40,51 +41,80 @@
     <img src="asset/logoFemina02.png" alt="">
     <div class="text">
         <h1>Femina</h1>
-        <p>Femina adalah platform digital yang berfokus pada isu-isu perempuan, khususnya dalam meningkatkan minat baca dan literasi anak dan remaja. Kami percaya bahwa membaca adalah fondasi penting bagi perkembangan intelektual dan emosional, serta kunci untuk membuka pintu menuju masa depan yang lebih cerah. Di Femina, kami menyajikan artikel, ulasan, dan acara yang dirancang untuk menginspirasi dan mendukung perempuan serta generasi muda dalam perjalanan literasi mereka. Dengan berbagai konten yang mendidik dan menginspirasi, kami berharap dapat membentuk komunitas pembaca yang kuat dan berdaya, siap menghadapi tantangan dunia modern.</p>
+        <p id="description">Femina adalah platform digital yang berfokus pada isu-isu perempuan, khususnya dalam meningkatkan minat baca dan literasi anak dan remaja. Kami percaya bahwa membaca adalah fondasi penting bagi perkembangan intelektual dan emosional, serta kunci untuk membuka pintu menuju masa depan yang lebih cerah. Di Femina, kami menyajikan artikel, ulasan, dan acara yang dirancang untuk menginspirasi dan mendukung perempuan serta generasi muda dalam perjalanan literasi mereka. Dengan berbagai konten yang mendidik dan menginspirasi, kami berharap dapat membentuk komunitas pembaca yang kuat dan berdaya, siap menghadapi tantangan dunia modern.</p>
     </div>
 </div>
 <!-- End Pengenalan Femina -->
+
+<!-- Start Konten Membaca -->
+<div class="cover-goal">
+    <div class="text-goal">
+        <h1>Tujuan</h1>
+        <p>Femina bertujuan memberikan kontribusi nyata dalam meningkatkan minat baca dan literasi di kalangan anak-anak dan remaja. Kami menyadari bahwa di era digital ini, akses terhadap informasi dan bahan bacaan sangatlah mudah, namun minat baca sering kali terabaikan. Melalui platform ini, Femina ingin menyediakan konten berkualitas yang tidak hanya menarik tetapi juga edukatif, sehingga mampu mendorong generasi muda untuk lebih gemar membaca. Dengan menyajikan artikel-artikel menarik, ulasan buku, dan berbagai kegiatan literasi, kami berharap dapat menjadi jembatan antara anak-anak dan remaja dengan dunia literasi yang kaya akan pengetahuan dan wawasan.</p>
+    </div>
+        <img src="asset/05membaca.PNG" alt="Cover Tujuan Femina">
+</div>
+<div class="content-femina">
+    <img src="asset/mark.svg" alt="question mark" class="image">
+    <div class="content-text">
+        <h1>Kenapa Femina Hadir?</h1>
+        <p><b>Fun Fact:</b> Tingkat Literasi Anak dan Remaja di Indonesia.<br>Tahukah kamu bahwa tingkat literasi di kalangan anak dan remaja Indonesia masih perlu banyak perhatian? Menurut data, Indonesia berada di peringkat 62 dari 70 negara dalam hal kemampuan membaca. Wah, kok bisa ya? Padahal, membaca itu seru banget lho!
+            Di era digital ini, anak-anak dan remaja lebih suka menghabiskan waktu dengan gadget daripada membaca buku. Eits, tapi jangan salah, membaca itu punya banyak manfaat, loh! Selain menambah pengetahuan, membaca juga bisa meningkatkan imajinasi dan kemampuan berpikir kritis. Jadi, daripada scroll media sosial terus, coba deh sempatkan waktu untuk membaca buku atau artikel menarik.
+            Nah, di sinilah Femina hadir sebagai sahabat literasi kamu. Femina punya banyak konten seru dan edukatif yang dirancang khusus untuk meningkatkan minat baca kamu. Mulai dari artikel inspiratif, ulasan buku kece, hingga tips-tips praktis untuk menumbuhkan kebiasaan membaca. Yuk, jadi bagian dari gerakan literasi bersama Femina dan tingkatkan kemampuan membaca kamu. Ingat, membaca itu keren dan bisa membuka jendela dunia!</p>
+    </div>
+</div>
+
+
+
+<!-- End Konten Membaca -->
+
 
 <!-- Start Form -->
 <div class="container">
     <div class="content">
         <h1>Ayo Gabung Bersama Kami!</h1>
         <form action="">
-        <fieldset>
-            <label for="name">Nama Anda:</label>
-            <input type="text" id="name">
-            <label for="city">Negara Asal :</label>
-            <input type="text" id="city">
-            <label for="zipcode">Kode Pos :</label>
-            <input type="number" id="zip-code">
-            <label for="email">Email Anda:</label>
-            <input type="email" id="email">
-            <div class="approval">
-                <label for="status">
-                <input type="checkbox" id="status">
-                Dengan ini saya menyatakan data yang di isi pada form ini adalah benar dan telah sesuai
-                </label>
-            </div>
+            <fieldset>
+                <div class="form-content">
+                    <label for="name">Nama Anda:</label>
+                    <input type="text" id="name">
+                    <label for="city">Negara Asal :</label>
+                    <input type="text" id="city">
+                    <label for="zipcode">Kode Pos :</label>
+                    <input type="number" id="zip-code">
+                    <label for="email">Email Anda:</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="checkbox-status">
+                    <input type="checkbox" id="status">
+                    <label for="status">Dengan ini saya menyatakan data yang di isi pada form ini adalah benar dan telah sesuai</label>
+                </div>
+                
                 <button id="submit-form" type="submit">Submit</button>
-        </fieldset>
+            </fieldset>
         </form>
-        <div id="warning"></div>
     </div>
+        <div id="warning"></div>
 </div>
 <!-- End Form -->
 
+<div class="card-patner">
+    <h1>Mitra Kami</h1>
+    <div class="logo-patner">
+        <a href="http://skilvul.com"><img src="asset/skilvul.svg" alt="Logo Skilvul"></a>
+        <a href="http://femina.com"><img src="asset/logoFemina02.png" alt="Logo Femina"></a>
+        <a href="https://www.markoding.org/"><img src="asset/markoding.png" alt="Logo Markoding"></a>
+    </div>
+    <div class="patner-image">
+        <a href="https://www.instagram.com/perempuaninovasi/"><img src="asset/perempuan-inovasi.png" alt="Logo Perempuan Inovasi"></a>
+        <a href="http://skilvul.com"><img src="asset/google.webp" alt="Logo Google"></a>
+        <a href="http://skilvul.com"><img src="asset/ImpactByteHorizontal.png" alt="Logo PT ImpactByte"></a>
+    </div>
+</div>
+
+<footer> &copy; Femina 2024, PT FEMINA IND</footer>
 
 
-<!-- Start Konten Membaca -->
-<div class="content-baca">
-    <img src="asset/02membaca.PNG" alt="">
-     <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptate unde, sapiente voluptatibus, expedita atque veritatis facilis quam facere tempora eos, ipsam fugiat! Excepturi quae veritatis distinctio obcaecati maiores magnam.</p>
-</div>
-<div class="content-literasi">
-    <img src="asset/02membaca.PNG" alt="">
-     <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptate unde, sapiente voluptatibus, expedita atque veritatis facilis quam facere tempora eos, ipsam fugiat! Excepturi quae veritatis distinctio obcaecati maiores magnam.</p>
-</div>
-<!-- End Konten Membaca -->
 
 
 
