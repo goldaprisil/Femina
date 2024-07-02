@@ -71,6 +71,14 @@ nav .logo img{
 .login-register li a{
   display: flex;
   text-decoration: none;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.login-register .login  {
+  display: flex;
+  text-decoration: none;
   background-color: #DDE6ED;
   border-radius: 10px;
   padding: 10px;
@@ -97,16 +105,26 @@ nav .logo img{
 /* Start Pengenalan Femina */
 .content-read{
   display: flex;
-  justify-items: center;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  margin: 10px;
 }
 
-.content-read img{
-  width: 50%;
-  height: 50%;
+.content-read .content-intro {
+  display: flex;
+  padding: 10px;
+  margin : 10px;
+  /* background-color: yellowgreen; */
+}
+
+img{
+  display: flex;
+  justify-content: center;
   border-radius: 20px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 #description{
@@ -128,31 +146,32 @@ nav .logo img{
 /* Start content-baca */
 .cover-goal{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   background-color: #526D82;
+  margin: 30px;
   padding: 30px;
-  margin: 45px;
   border-radius: 10px;
-  height: 300px;
-}
-
-.cover-goal .text-goal h1 {
-  color: white;
-  font-size: 30px;
 }
 
 .cover-goal .text-goal p{
-  color: white;
-  text-align: justify;
   font-size: 20px;
-  margin-top: 10px;
-  padding-right: 30px;
+  text-align: justify;
+  color: white;
 }
 
+.cover-goal .text-goal h1{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  padding: 10px;
+  color: white;
+}
+
+
 .cover-goal img{
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
   object-fit: cover;
 }
 
@@ -307,21 +326,21 @@ nav .logo img{
   padding: 20px;
 }
 
-.logo-patner, .patner-image {
+.logo-patner, .patner-image{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
-  height: 170px;
-  background-color: rgb(255, 255, 255);
+  flex-direction: column;
+  padding: 30px;
+  /* margin: 10px; */
 }
 
 .logo-patner img, .patner-image img{
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  width: 200px;
-  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
 }
 
 /* End Card Patner */
@@ -338,3 +357,36 @@ footer{
   /* border-top: solid #526D82 1px; */
 }
 /* End Footer */
+
+
+
+
+
+/* Start Media Query */
+@media (max-width: 600px) {
+  .content-read {
+    display: flex;
+    flex-direction: column;
+  }
+  .cover-goal, .text-goal, .img {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .card-patner {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo-patner img{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+
+/* End Media Query */
