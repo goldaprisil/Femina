@@ -416,38 +416,56 @@ footer{
   }
 }
 
-
 /* Perangkat dengan lebar layar 1000px dan di bawahnya */ 
-@media screen and (max-width: 1000px){
-  nav{
+@media screen and (max-width: 1000px) {
+  /* nav{
     display: inline-block;
     justify-content: center;
     align-items: center;
     width: 100%;
-  }
+  } */
   .content-read {
     display: flex;
     flex-direction: column;
   }
-  .content-intro {
+  .content-intro{
     width: auto;
+  }
+  .content-intro img {
+    max-height: 350px;
+    width: 100%;
   }
   .cover-goal, .text-goal, .img {
     display: flex;
     flex-direction: column;
   }
-  .content-femina, .content-text, .img {
+  .content-femina, .content-text {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
   }
-  .container, .content, .form-content {
+}
+
+/* Perangkat dengan lebar layar 1200px dan di bawahnya */ 
+@media screen and (max-width: 1200px){
+  .cover-goal, .text-goal {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
   }
+
+  .cover-goal img{
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .content-femina, .content-text h1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+
 }
 
 /* End Media Query */
