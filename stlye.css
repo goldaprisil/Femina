@@ -15,11 +15,19 @@ body{
 }
 
 /* Start Navigasi */
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1; 
+  background-color: white; 
+}
+
 nav{
   display: flex;
   justify-content: space-between;
   padding: .7em;
-  background-color: white;
 }
 
 nav .logo{
@@ -41,7 +49,7 @@ nav .logo img{
 .navigasi li a{
   display: flex;
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: #27374D;
   border-radius: 10px;
   padding: 10px;
 }
@@ -50,15 +58,16 @@ nav .logo img{
   background-color: #27374D;
   color: white;
   font-weight: bold;
+  transition: .5s ease-in-out;
 }
 
 
 .navigasi li {
-  margin-right: 10px; /* Menambahkan jarak antar elemen */
+  margin-right: 10px; 
 }
 
 .navigasi li:last-child {
-  margin-right: 0; /* Menghapus margin pada elemen terakhir */
+  margin-right: 0; 
 }
 
 
@@ -71,7 +80,7 @@ nav .logo img{
 .login-register li a{
   display: flex;
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: #27374D;
   border-radius: 10px;
   padding: 10px;
 }
@@ -88,14 +97,15 @@ nav .logo img{
   background-color: #27374D;
   color: white;
   font-weight: bold;
+  transition: .5s ease-in-out;
 }
 
 .login-register li {
-  margin-right: 10px; /* Menambahkan jarak antar elemen */
+  margin-right: 10px;
 }
 
 .login-register li:last-child {
-  margin-right: 0; /* Menghapus margin pada elemen terakhir */
+  margin-right: 0;
 }
 /* End Navigasi */
 
@@ -107,24 +117,28 @@ nav .logo img{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 30px;
-  margin: 10px;
+  margin: 50px;
 }
 
-.content-read .content-intro {
+.content-intro {
   display: flex;
-  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 5000px;
+  padding: 20px;
   margin : 10px;
-  /* background-color: yellowgreen; */
+  background-color: #526D82;
 }
 
 img{
   display: flex;
   justify-content: center;
+  align-items: center;
   border-radius: 20px;
   width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 #description{
@@ -149,7 +163,7 @@ img{
   justify-content: space-around;
   align-items: center;
   background-color: #526D82;
-  margin: 30px;
+  margin: 60px;
   padding: 30px;
   border-radius: 10px;
 }
@@ -168,17 +182,15 @@ img{
   color: white;
 }
 
-
 .cover-goal img{
   padding: 10px;
   margin: 10px;
   object-fit: cover;
 }
 
-
 .content-femina {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 40px;
   border-radius: 10px;
 }
@@ -227,7 +239,6 @@ img{
   margin: 15px;
   font-size: 30px;
   color: #526D82;
-  
 }
 
 .container {
@@ -240,7 +251,7 @@ img{
 }
 
 .container .content form {
-  width: 500px;
+  /* width: 500px; */
   display: flex;
   justify-content: flex-end;
   background-color: #526D82;
@@ -306,19 +317,19 @@ img{
   font-weight: bolder;
   transition: 0.3s;
 }
-
-
 /* End Form */
 
-/* Start Card Patner */
-.card-patner{
+
+
+/* Start Card Partner */
+.card-partner {
   background-color: white;
   color: #27374D;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
 }
 
-.card-patner h1{
+.card-partner h1 {
   display: flex;
   justify-content: center;
   color: #27374D;
@@ -326,27 +337,39 @@ img{
   padding: 20px;
 }
 
-.logo-patner, .patner-image{
+.logo-partner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  flex-direction: column;
-  padding: 30px;
-  /* margin: 10px; */
 }
 
-.logo-patner img, .patner-image img{
+.logo-partner a {
   display: flex;
-  justify-content: space-around;
-  width: 300px;
-  height: 300px;
-  object-fit: contain;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-/* End Card Patner */
+.logo-partner img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logo-partner img:hover {
+  transform: scale(1.1);
+}
+/* End Card Partner */
 
 
-/* Start Footer */
+
+
+/* Start ooter */
 footer{
   display: flex;
   justify-content: center;
@@ -354,39 +377,77 @@ footer{
   background-color: white;
   color: #27374D;
   font-weight: bold;
-  /* border-top: solid #526D82 1px; */
 }
 /* End Footer */
 
 
 
-
-
 /* Start Media Query */
-@media (max-width: 600px) {
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+@media screen and (max-width: 768px) {
+  nav{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
   .content-read {
     display: flex;
     flex-direction: column;
+  }
+  .content-intro {
+    width: auto;
   }
   .cover-goal, .text-goal, .img {
     display: flex;
     flex-direction: column;
   }
-  .container .content {
+  .content-femina, .content-text, .img {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
   }
-  .card-patner {
+  .container, .content, .form-content {
     display: flex;
-    flex-direction: column;
-  }
-  .logo-patner img{
-    display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
   }
 }
 
+
+/* Perangkat dengan lebar layar 1000px dan di bawahnya */ 
+@media screen and (max-width: 1000px){
+  nav{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .content-read {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-intro {
+    width: auto;
+  }
+  .cover-goal, .text-goal, .img {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-femina, .content-text, .img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container, .content, .form-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 
 /* End Media Query */
