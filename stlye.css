@@ -402,18 +402,19 @@ footer{
     display: flex;
     flex-direction: column;
   }
-  .content-femina, .content-text, .img {
+  /* .content-femina, .content-text, .img {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-  }
+  } */
   .container, .content, .form-content {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
+
 }
 
 /* Perangkat dengan lebar layar 1000px dan di bawahnya */ 
@@ -459,12 +460,11 @@ footer{
     width: 100%;
     object-fit: cover;
   }
-  .content-femina, .content-text h1{
+  .content-femina, .content-text, .img {
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    align-items: center;
-  }
+    flex-direction: column;
+    align-items: center;}
 
 }
 
