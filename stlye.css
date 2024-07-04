@@ -402,12 +402,6 @@ footer{
     display: flex;
     flex-direction: column;
   }
-  /* .content-femina, .content-text, .img {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  } */
   .container, .content, .form-content {
     display: flex;
     justify-content: center;
@@ -419,12 +413,6 @@ footer{
 
 /* Perangkat dengan lebar layar 1000px dan di bawahnya */ 
 @media screen and (max-width: 1000px) {
-  /* nav{
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  } */
   .content-read {
     display: flex;
     flex-direction: column;
