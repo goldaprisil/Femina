@@ -407,16 +407,6 @@ footer{
     max-height: 350px;
     width: 100%;
   }
-  .cover-goal, .text-goal, .img {
-    display: flex;
-    flex-direction: column;
-  }
-  .content-femina, .content-text {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
 /* Perangkat dengan lebar layar 1200px dan di bawahnya */ 
