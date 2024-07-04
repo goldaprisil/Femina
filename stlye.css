@@ -383,6 +383,16 @@ footer{
 
 
 /* Start Media Query */
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+@media screen and (max-width: 600px) {
+  nav{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
 
 /* Perangkat dengan lebar layar 1000px dan di bawahnya */ 
 @media screen and (max-width: 1000px) {
