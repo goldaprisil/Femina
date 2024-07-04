@@ -383,33 +383,6 @@ footer{
 
 
 /* Start Media Query */
-/* Perangkat dengan lebar layar 768px dan di bawahnya */
-@media screen and (max-width: 600px) {
-  nav{
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .content-read {
-    display: flex;
-    flex-direction: column;
-  }
-  .content-intro {
-    width: auto;
-  }
-  .cover-goal, .text-goal, .img {
-    display: flex;
-    flex-direction: column;
-  }
-  .container, .content, .form-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: auto;
-  }
-}
 
 /* Perangkat dengan lebar layar 1000px dan di bawahnya */ 
 @media screen and (max-width: 1000px) {
